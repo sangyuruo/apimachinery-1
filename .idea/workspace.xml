@@ -40,11 +40,45 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pkg/apis/meta/v1/unstructured/unstructured.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="440" lean-forward="true" selection-start-line="440" selection-end-line="440" />
+            <state relative-caret-position="155">
+              <caret line="441" column="21" selection-start-line="441" selection-start-column="9" selection-end-line="441" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pkg/runtime/serializer/codec_test.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-996">
+              <folding>
+                <element signature="e#591#1028#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pkg/runtime/serializer/negotiated_codec.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-324" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pkg/runtime/serializer/sparse_test.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1701" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pkg/runtime/serializer/codec_factory.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="387">
+              <caret line="325" column="55" selection-start-line="325" selection-start-column="55" selection-end-line="325" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -67,6 +101,11 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>DirectCodecFactory</find>
+    </findStrings>
+  </component>
   <component name="GOROOT" path="D:\env\go" />
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
@@ -79,6 +118,7 @@
         <option value="$PROJECT_DIR$/pkg/apis/meta/internalversion/types.go" />
         <option value="$PROJECT_DIR$/pkg/apis/meta/v1/types.go" />
         <option value="$PROJECT_DIR$/pkg/apis/meta/v1/unstructured/unstructured.go" />
+        <option value="$PROJECT_DIR$/pkg/runtime/serializer/codec_factory.go" />
       </list>
     </option>
   </component>
@@ -131,18 +171,14 @@
               <item name="apimachinery" type="b2602c69:ProjectViewProjectNode" />
               <item name="apimachinery" type="462c0819:PsiDirectoryNode" />
               <item name="pkg" type="462c0819:PsiDirectoryNode" />
-              <item name="apis" type="462c0819:PsiDirectoryNode" />
-              <item name="meta" type="462c0819:PsiDirectoryNode" />
-              <item name="v1" type="462c0819:PsiDirectoryNode" />
+              <item name="runtime" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="apimachinery" type="b2602c69:ProjectViewProjectNode" />
               <item name="apimachinery" type="462c0819:PsiDirectoryNode" />
               <item name="pkg" type="462c0819:PsiDirectoryNode" />
-              <item name="apis" type="462c0819:PsiDirectoryNode" />
-              <item name="meta" type="462c0819:PsiDirectoryNode" />
-              <item name="v1" type="462c0819:PsiDirectoryNode" />
-              <item name="unstructured" type="462c0819:PsiDirectoryNode" />
+              <item name="runtime" type="462c0819:PsiDirectoryNode" />
+              <item name="serializer" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -182,7 +218,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.09152086" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.16958277" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -244,8 +280,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pkg/apis/meta/v1/unstructured/unstructured.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="440" lean-forward="true" selection-start-line="440" selection-end-line="440" />
+        <state relative-caret-position="155">
+          <caret line="441" column="21" selection-start-line="441" selection-start-column="9" selection-end-line="441" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkg/runtime/serializer/codec_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-996">
+          <folding>
+            <element signature="e#591#1028#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkg/runtime/serializer/negotiated_codec.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-324" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkg/runtime/serializer/sparse_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1701" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pkg/runtime/serializer/codec_factory.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="325" column="55" selection-start-line="325" selection-start-column="55" selection-end-line="325" selection-end-column="55" />
         </state>
       </provider>
     </entry>

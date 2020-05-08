@@ -322,3 +322,5 @@ func (f WithoutConversionCodecFactory) DecoderToVersion(serializer runtime.Decod
 		Decoder: serializer,
 	}
 }
+
+type DirectCodecFactory = WithoutConversionCodecFactory
