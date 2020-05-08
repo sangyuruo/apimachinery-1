@@ -263,6 +263,8 @@ type ObjectMeta struct {
 	// +patchStrategy=merge
 	Finalizers []string `json:"finalizers,omitempty" patchStrategy:"merge" protobuf:"bytes,14,rep,name=finalizers"`
 
+	Initializers *Initializers `json:"initializers,omitempty" protobuf:"bytes,16,opt,name=initializers"`
+
 	// The name of the cluster which the object belongs to.
 	// This is used to distinguish resources with same name and namespace in different clusters.
 	// This field is not set anywhere right now and apiserver is going to ignore it if set in create or update request.
@@ -279,6 +281,24 @@ type ObjectMeta struct {
 	//
 	// +optional
 	ManagedFields []ManagedFieldsEntry `json:"managedFields,omitempty" protobuf:"bytes,17,rep,name=managedFields"`
+}
+
+// Initializers tracks the progress of initialization.
+type Initializers struct {
+	// Pending is a list of initializers that must execute in order before this object is visible.
+	// When the last pending initializer is removed, and no failing result is set, the initializers
+	// struct will be set to nil and the object is considered as initialized and visible to all
+	// clients.
+	Pending []Initializer `json:"pending" protobuf:"bytes,1,rep,name=pending"`
+	// If result is set with the Failure field, the object will be persisted to storage and then deleted,
+	// ensuring that other clients can observe the deletion.
+	Result *Status `json:"result,omitempty" protobuf:"bytes,2,opt,name=result"`
+}
+
+// Initializer is information about an initializer that has not yet completed.
+type Initializer struct {
+	// name of the process that is responsible for initializing this object.
+	Name string `json:"name" protobuf:"bytes,1,opt,name=name"`
 }
 
 const (
