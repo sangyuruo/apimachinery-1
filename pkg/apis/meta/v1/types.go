@@ -358,6 +358,9 @@ type ListOptions struct {
 	// +optional
 	FieldSelector string `json:"fieldSelector,omitempty" protobuf:"bytes,2,opt,name=fieldSelector"`
 
+	// If true, partially initialized resources are included in the response.
+	// +optional
+	IncludeUninitialized bool `json:"includeUninitialized,omitempty" protobuf:"varint,6,opt,name=includeUninitialized"`
 	// +k8s:deprecated=includeUninitialized,protobuf=6
 
 	// Watch for changes to the described resources and return them as a stream of
@@ -449,6 +452,9 @@ type GetOptions struct {
 	// - if set to non zero, then the result is at least as fresh as given rv.
 	ResourceVersion string `json:"resourceVersion,omitempty" protobuf:"bytes,1,opt,name=resourceVersion"`
 	// +k8s:deprecated=includeUninitialized,protobuf=2
+	// If true, partially initialized resources are included in the response.
+	// +optional
+	IncludeUninitialized bool `json:"includeUninitialized,omitempty" protobuf:"varint,2,opt,name=includeUninitialized"`
 }
 
 // DeletionPropagation decides if a deletion will propagate to the dependents of

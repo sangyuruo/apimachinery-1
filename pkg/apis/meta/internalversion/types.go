@@ -33,6 +33,9 @@ type ListOptions struct {
 	LabelSelector labels.Selector
 	// A selector based on fields
 	FieldSelector fields.Selector
+	// If true, partially initialized resources are included in the response.
+	// +optional
+	IncludeUninitialized bool `json:"includeUninitialized,omitempty"`
 	// If true, watch for changes to this list
 	Watch bool
 	// allowWatchBookmarks requests watch events with type "BOOKMARK".
